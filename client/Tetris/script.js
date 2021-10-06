@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable no-loop-func */
 /* eslint-disable no-param-reassign */
 /* eslint-disable no-plusplus */
@@ -140,7 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  const dispalySquares = document.querySelectorAll('.mini-grid div');
+  const displaySquares = document.querySelectorAll('.mini-grid div');
   const displayWidth = 4;
   const displayIndex = 0;
 
@@ -153,13 +154,13 @@ document.addEventListener('DOMContentLoaded', () => {
   ];
 
   function displayShape() {
-    dispalySquares.forEach((square) => {
+    displaySquares.forEach((square) => {
       square.classList.remove('tetromino');
       square.style.backgroundColor = '';
     });
     upNextTetrominoes[nextRandom].forEach((index) => {
-      dispalySquares[displayIndex + index].classList.add('tetromino');
-      dispalySquares[displayIndex + index].style.backgroundColor = colors[nextRandom];
+      displaySquares[displayIndex + index].classList.add('tetromino');
+      displaySquares[displayIndex + index].style.backgroundColor = colors[nextRandom];
     });
   }
 
