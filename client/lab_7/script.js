@@ -1,4 +1,4 @@
-const mymap = L.map('mapid').setView([38.989, -76.93], 13);
+const mymap = L.map('mapid').setView([38.980, -76.92799], 13);
 const ACCESSTOKEN = 'pk.eyJ1IjoibWZmMjY2MiIsImEiOiJja3Y1OHB3MzIxODQ3Mm9sMGl2NjM1MXRkIn0.t4S8jq5OD9zZ4rFtsURuCQ';
 const searchInput = document.querySelector('.search');
 const suggestions = document.querySelector('.suggestions');
